@@ -14,6 +14,4 @@ io.on('connection', function(socket){
 });
 
 
-http.listen(3005, function(){
-  console.log('listening on *:3009');
-});
+http.listen(process.env.PORT || 3000);
