@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DRUNK GAME</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="logInDiv">
+    <h1>Create an Id</h1>
+    <form id="userIdForm" action="">
+      <input id="userIdInput" autocomplete="off" /><button>Send</button>
+    </form>
+  </div>
+  <div id="gameDiv" hidden>
+    <h1>DO THE MATH PROBLEM TO SHOW U ARE NOT DRUNK</h1>
+    <h2>DO IT FAST, WHO FIRST GOT THE RIGHT ANSWER WINS</h2>
+    <div id="questionDiv" hidden>
+    </div>
+    <form id="guessForm" action="">
+      <input id="guessInput" autocomplete="off" /><button>Send</button>
+    </form>
+    <div id='waitingDiv' hidden>
+      <p>Waiting for guesses</p>
+    </div>
+  </div>
+  <div id='resultsDiv' hidden>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="./socket.io/socket.io.js"></script>
+  <script src="/main.js"></script>
+</body>
+</html>
