@@ -1,0 +1,9 @@
+html{
+  border-style: solid;
+  text-align: center;
+}
+
+
+#resultsDiv {
+  font-size: 500%;
+}

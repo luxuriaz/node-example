@@ -1,20 +1,23 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <title>DRUNK GAME</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
   <div id="logInDiv">
-    <h1>Create an Id</h1>
+    <h1>Enter Your Nick Name</h1>
     <form id="userIdForm" action="">
       <input id="userIdInput" autocomplete="off" /><button>Send</button>
     </form>
   </div>
   <div id="gameDiv" hidden>
-    <h1>DO THE MATH PROBLEM TO SHOW U ARE NOT DRUNK</h1>
-    <h2>DO IT FAST, WHO FIRST GOT THE RIGHT ANSWER WINS</h2>
+    <h1>Do the math problem show you are not drunk</h1>
+    <h2>do it fast, who first get the correct answer wins</h2>
+    <h2>do it slow, who get the answer wrong lose</h2>
     <div id="questionDiv" hidden>
     </div>
     <form id="guessForm" action="">
@@ -31,4 +34,5 @@
   <script src="./socket.io/socket.io.js"></script>
   <script src="/main.js"></script>
 </body>
+
 </html>
